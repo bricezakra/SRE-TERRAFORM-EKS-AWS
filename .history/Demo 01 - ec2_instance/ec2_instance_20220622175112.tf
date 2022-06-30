@@ -1,7 +1,7 @@
 # PREREQUISITES:
 ## 1 - Ensure you have "DEFAULT-VPC" in that respective region
 ## 2 - Ensure "AMI" you are provisioning exists in that region. If not, update "AMI ID" 
-## 3 - Verify your AWS Credentials with this cmd line:     cat $HOME/.aws/credentials
+## 3 - Verify your AWS Credentials in **$HOME/.aws/credentials
 
 
 
@@ -26,4 +26,5 @@ resource "aws_instance" "ec2demo" {
     ami = "ami-0cff7528ff583bf9a" # Amazon Linux in us-east-1, update as per your region
     instance_type = "t2.micro"
 }
+
 

@@ -1,7 +1,7 @@
 # PREREQUISITES:
 ## 1 - Ensure you have "DEFAULT-VPC" in that respective region
 ## 2 - Ensure "AMI" you are provisioning exists in that region. If not, update "AMI ID" 
-## 3 - Verify your AWS Credentials with this cmd line:     cat $HOME/.aws/credentials
+## 3 - Verify your AWS Credentials in     $HOME/.aws/credentials
 
 
 
