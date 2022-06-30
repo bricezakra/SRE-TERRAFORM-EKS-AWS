@@ -12,3 +12,25 @@
 
 # - RESOURCE Block 
 
+
+
+
+
+# RESOURCE Block: to create an EC2 instance
+resource "aws_instance" "my_ec2_vm" {
+  ami = "ami-0cff7528ff583bf9a"
+  instance_type = "t3.micro"
+  user_data = file("${path.module}/app1-install.sh")
+  tags = {
+    "Name" = "EC2_Demo"
+  }
+}
+
+
+
+
+
+# P.S.: Link for Terraform File Function for "user_data" https://www.terraform.io/language/functions/file
+# READ IT - IMPORTANT
+# VIDEO 22 (3min:05sec) - to REVIEW IT
+# Documentation (aws_ec2 instance): https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/instance

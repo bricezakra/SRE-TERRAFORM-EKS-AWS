@@ -25,8 +25,9 @@ terraform {
     }
 }
 
-# PROVIDER Block
+# PROVIDER Block for us-east-1
 provider "aws" {
-    profile = "default"
     region  = "us-east-1"
+    profile = "default"
+    alias   = "aws-east-1"
 }
